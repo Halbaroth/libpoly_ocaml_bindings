@@ -386,7 +386,7 @@ module Polynomial = struct
         let m = Unsigned.Size_t.to_int !@(!@tmp_multiplicities +@ i) in
         (p, m))
     in
-    libpoly_utils_free (to_voidp (!@tmp_factors));
-    libpoly_utils_free (to_voidp (!@tmp_multiplicities));
+    (* libpoly_utils_free (to_voidp (!@tmp_factors));
+    libpoly_utils_free (to_voidp (!@tmp_multiplicities)); *)
     r
 end
